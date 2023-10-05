@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Reflection.Emit;
 using System.Threading;
-using System.Timers;
 
 namespace KFU_4th_lesson
 {
@@ -65,7 +63,7 @@ namespace KFU_4th_lesson
         }
         static void Less2()
         {
-            Console.WriteLine("Задание 2:");
+            Console.WriteLine("\nЗадание 2:");
             int[] values = new int[7];
             for (int i = 0; i < 7; i++)
             {
@@ -106,7 +104,7 @@ namespace KFU_4th_lesson
         }
         static void Less3()
         {
-            Console.WriteLine("Задание 3:\nВведите число от 0 до 9 или exit(закрыть) для завершения работы консоли");
+            Console.WriteLine("\nЗадание 3:\nВведите число от 0 до 9 или exit(закрыть) для завершения работы консоли");
             bool flag = true;
             while (flag)
             {
@@ -140,6 +138,7 @@ namespace KFU_4th_lesson
                         Console.BackgroundColor = ConsoleColor.Red;                       
                         Console.WriteLine(e.Message);
                         Thread.Sleep(3000);
+                        Console.ResetColor();
                         flag = false;
                     }
                 }
@@ -184,6 +183,7 @@ namespace KFU_4th_lesson
         }
         static void Less4()
         {
+            Console.WriteLine("\nЗадание 5: ");
             string[] phrase1 = { "Проститутки", "Гады" };
             string[] phrase2 = { "Паршивцы", "Негодяи", "Оболтусы" };
             string[] phrase3 = { "Бараны", "Мудаки", "Невоспитанные", "Гандоны", "Чепуха" };

@@ -133,7 +133,7 @@ namespace Tumakov
         }
         static void Less6()
         {
-            Console.WriteLine("Домашнее задание 5.2\nВведите номер n числа ряда Фибоначчи: ");
+            Console.WriteLine("\nДомашнее задание 5.2\nВведите номер n числа ряда Фибоначчи: ");
             if (int.TryParse(Console.ReadLine(), out int value))
             {
                 Console.WriteLine($"Номеру {value} соотвествует значение {Fibonacci(value)}");
